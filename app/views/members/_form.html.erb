@@ -17,8 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :age %>
-    <%= form.text_field :age, id: :member_age %>
+    <%= form.label :dob %>
+    <%= form.date_select :dob,:start_year => Date.current.year, :end_year => 1970, id: :member_dob %>
   </div>
 
   <% gender = {"male" => 1, "female" => 0} %>

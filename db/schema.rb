@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 20170621021124) do
 
   create_table "members", force: :cascade do |t|
     t.string "name"
-    t.integer "age"
     t.integer "gender"
+    t.date "dob"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
