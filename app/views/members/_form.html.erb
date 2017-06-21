@@ -21,10 +21,21 @@
     <%= form.date_select :dob,:start_year => Date.current.year, :end_year => 1970, id: :member_dob %>
   </div>
 
-  <% gender = {"male" => 1, "female" => 0} %>
+  <% gender = {"Male" => "Male", "Female" => "Female"} %>
   <div class="field">
     <%= form.label :gender %>
-    <%= form.select :gender, gender %>
+    <%= form.select :gender, gender, selected: member.gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :email %>
+  </div>
+
+<% role = {"Admin" => "Admin", "Guest" => "Guest"} %>
+  <div class="field">
+    <%= form.label :role %>
+    <%= form.select :role, role, selected: member.role%>
   </div>
 
   <div class="actions">

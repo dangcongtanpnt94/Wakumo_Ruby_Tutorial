@@ -40,6 +40,7 @@ group :development, :test do
   # gem 'sqlite3', '1.3.12'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
 end
 
 group :development do

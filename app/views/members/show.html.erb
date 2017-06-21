@@ -15,7 +15,17 @@
 </p>
 <p>
   <strong>Gender:</strong>
-  <%= @member.genderr %>
+  <%= @member.gender %>
+</p>
+
+<p>
+  <strong>Email: </strong>
+  <%= @member.email %>
+</p>
+
+<p>
+  <strong>Role: </strong>
+  <%= @member.role %>
 </p>
 
 <%= link_to 'Edit', edit_member_path(@member) %> |
