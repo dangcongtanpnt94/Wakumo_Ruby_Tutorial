@@ -41,7 +41,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: wakumo_ruby_tutorial
+  database: wakumo_ruby_tutorial_test
   pool: 5
   username: congtan
   password:
@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: wakumo_ruby_tutorial
+  database: wakumo_ruby_tutorial_development
   pool: 5
   username: congtan
   password:

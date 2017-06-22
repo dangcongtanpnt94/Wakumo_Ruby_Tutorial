@@ -41,6 +41,7 @@ class MembersController < ApplicationController
   # PATCH/PUT /members/1.json
   def update
     respond_to do |format|
+      # @attr = member_params
       if @member.update(member_params)
         format.html { redirect_to @member, notice: 'Member was successfully updated.' }
         format.json { render :show, status: :ok, location: @member }
